@@ -4,16 +4,16 @@ interface Istudent {
   grade: number;
 }
 
-let studentName: string = 'Hamim';
-let studentAge: number = 30;
-let studentGrade: number = 3.0;
+let studentName: string = 'Alamin';
+let studentAge: number = 20;
+let studentGrade: number = 3.4;
 
 console.log('Name:', studentName);
 console.log('Age:', studentAge);
 console.log('Grade:', studentGrade);
 
-let a: number = 10;
-let b: number = 20;
+let a: number = 30;
+let b: number = 80;
 let sum: number = a + b;
 console.log('Sum:', sum);
 
@@ -24,7 +24,7 @@ function getStudentName(): string {
   return 'hamim';
 }
 function getStudentAge(): number {
-  return 26;
+  return 16;
 }
 function getStudentGrade(): number {
   return 3.9;
@@ -63,10 +63,10 @@ function fetchStudentInfo(): Promise<Istudent> {
     setTimeout(() => {
       resolve({
         name: 'Hamim',
-        age: 26,
+        age: 16,
         grade: 3.9,
       });
-    }, 2000);
+    }, 3000);
   });
 }
 
